@@ -1,3 +1,5 @@
+## examples for 3rd party libraries
+
 - [] TMP102 - temp sensor
 - [] ADXL345 (sparkfun acc)
 - [] ITG 3200 - gyroscope
@@ -11,6 +13,3 @@
 - [] CAP1188 - cap. touch
 - [] PCA9685 - PWM driver
 - [] AT45DB161 - 16-mbit flash (https://github.com/BlockoS/arduino-dataflash)
-- [] 
-- [] 
-- [] 
