@@ -24,6 +24,15 @@ void loop_mma7260(void);
 void setup_tcs34725(void);
 void loop_tcs34725(void);
 
+void setup_lsm303dlhc_a(void);
+void loop_lsm303dlhc_a(void);
+
+void setup_lsm303dlhc_m(void);
+void loop_lsm303dlhc_m(void);
+
+void setup_l3gd20u(void);
+void loop_l3gd20u(void);
+
 void setup(void)
 {
     Serial.begin(115200, SERIAL_8N1);
@@ -40,39 +49,14 @@ void setup(void)
 //    setup_tmp102();
 //    setup_itg3200();
 //    setup_mma7260();
-    setup_tcs34725();
+//    setup_tcs34725();
+    setup_lsm303dlhc_a();
+//    setup_lsm303dlhc_m();
+//    setup_l3gd20u();
 }
 
 int ledState = LOW;
-int time = 0;
-
-int timeStart = millis();
-#define MAX_MILLIS 477218
-
-bool timeLapseMillis(int deltaMs)
-{
-    int now;
-    int delta = 0;
-
-        now = millis();
-        if(now < timeStart)
-        {
-            // this handles timer counter overflow
-            // when counter overflows, 'now' becomes < 'start'
-            delta = MAX_MILLIS - timeStart + now;
-        }
-        else
-        {
-            // regular situation is when 'start' comes before 'now'
-            delta = now - timeStart;
-        }
-
-        if(delta < deltaMs)
-            return false;
-
-        timeStart = now;
-        return true;
-}
+bool timeLapseMillis(int deltaMs);
 
 void loop(void)
 {
@@ -88,7 +72,10 @@ void loop(void)
 //    loop_tmp102();
 //    loop_itg3200();
 //    loop_mma7260();
-    loop_tcs34725();
+//    loop_tcs34725();
+    loop_lsm303dlhc_a();
+//    loop_lsm303dlhc_m();
+//    loop_l3gd20u();
 
     yield();
 }
