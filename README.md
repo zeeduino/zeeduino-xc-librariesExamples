@@ -14,5 +14,5 @@
 - [x] TMP102 - temp sensor
 - [ ] ITG 3200 - gyroscope
 - [x] MMA7260 (sparkfun tri-axis breakout)
-- [ ] MMA7261Q eval board - acc.
+- [x] MMA7261Q eval board - acc.
 - [ ] ADXL345 (sparkfun acc)

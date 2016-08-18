@@ -11,41 +11,41 @@
 #define VOLTS_PER_BIT_3_3V (3.3/1023.0)
 
 // How many A/D bits for 1g
-#define BITS_PER_G_1_5G (BITS_PER_VOLT_3_3V*0.8)
-#define BITS_PER_G_2G (BITS_PER_VOLT_3_3V*0.6)
-#define BITS_PER_G_4G (BITS_PER_VOLT_3_3V*0.3)
-#define BITS_PER_G_6G (BITS_PER_VOLT_3_3V*0.2)
+#define BITS_PER_G_2_5G (BITS_PER_VOLT_3_3V*0.48)
+#define BITS_PER_G_3_3G (BITS_PER_VOLT_3_3V*0.36)
+#define BITS_PER_G_6_7G (BITS_PER_VOLT_3_3V*0.18)
+#define BITS_PER_G_10G (BITS_PER_VOLT_3_3V*0.12)
 
-static float bitsPerG = BITS_PER_G_1_5G;
+static float bitsPerG = BITS_PER_G_2_5G;
 
-void setup_mma7260(){
-	Serial.println("MMA7260 example");
+void setup_mma7261(){
+	Serial.println("MMA7261 example");
 
 	pinMode(PIN_GS2, OUTPUT);
 	pinMode(PIN_GS1, OUTPUT);
 
 	// slelect g-range: 1.5g, sensitivity: 800mV/g
-//	digitalWrite(PIN_GS2, LOW);
-//	digitalWrite(PIN_GS1, LOW);
-//	bitsPerG = BITS_PER_G_1_5G;
+	digitalWrite(PIN_GS2, LOW);
+	digitalWrite(PIN_GS1, LOW);
+	bitsPerG = BITS_PER_G_2_5G;
 
 	// slelect g-range: 2g, sensitivity: 600mV/g
-	digitalWrite(PIN_GS2, LOW);
-	digitalWrite(PIN_GS1, HIGH);
-	bitsPerG = BITS_PER_G_2G;
+//	digitalWrite(PIN_GS2, LOW);
+//	digitalWrite(PIN_GS1, HIGH);
+//	bitsPerG = BITS_PER_G_3_3G;
 
 	// slelect g-range: 4g, sensitivity: 300mV/g
 //	digitalWrite(PIN_GS2, HIGH);
 //	digitalWrite(PIN_GS1, LOW);
-//	bitsPerG = BITS_PER_G_4G;
+//	bitsPerG = BITS_PER_G_6_7G;
 
 	// slelect g-range: 6g, sensitivity: 200mV/g
 //	digitalWrite(PIN_GS2, HIGH);
 //	digitalWrite(PIN_GS1, HIGH);
-//	bitsPerG = BITS_PER_G_6G;
+//	bitsPerG = BITS_PER_G_10G;
 }
 
-void loop_mma7260(){
+void loop_mma7261(){
 	int  valX;
 	int  valY;
 	int  valZ;

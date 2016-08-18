@@ -22,6 +22,9 @@ void loop_itg3200(void);
 void setup_mma7260(void);
 void loop_mma7260(void);
 
+void setup_mma7261(void);
+void loop_mma7261(void);
+
 void setup_tcs34725(void);
 void loop_tcs34725(void);
 
@@ -56,12 +59,13 @@ void setup(void)
 //    setup_tmp102();
 //    setup_itg3200();
 //    setup_mma7260();
+    setup_mma7261();
 //    setup_tcs34725();
 //    setup_lsm303dlhc_a();
 //    setup_lsm303dlhc_m();
 //    setup_l3gd20u();
 //    setup_adxl345();
-    setup_pwm();
+//    setup_pwm();
 }
 
 int ledState = LOW;
@@ -80,12 +84,13 @@ void loop(void)
 //    loop_tmp102();
 //    loop_itg3200();
 //    loop_mma7260();
+    loop_mma7261();
 //    loop_tcs34725();
 //    loop_lsm303dlhc_a();
 //    loop_lsm303dlhc_m();
 //    loop_l3gd20u();
 //    loop_adxl345();
-    loop_pwm();
+//    loop_pwm();
 
     yield();
 }
