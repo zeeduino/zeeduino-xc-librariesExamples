@@ -1,6 +1,6 @@
 #include "Arduino.h"
 
-#define FW_VERSION "0.1.6"
+#define FW_VERSION "0.1.7"
 void printBanner(void);
 
 void setup_bmp085(void);
