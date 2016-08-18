@@ -21,6 +21,8 @@ void loop_itg3200(void);
 void setup_mma7260(void);
 void loop_mma7260(void);
 
+void setup_tcs34725(void);
+void loop_tcs34725(void);
 
 void setup(void)
 {
@@ -37,7 +39,8 @@ void setup(void)
 //    setup_temt6000();
 //    setup_tmp102();
 //    setup_itg3200();
-    setup_mma7260();
+//    setup_mma7260();
+    setup_tcs34725();
 }
 
 int ledState = LOW;
@@ -84,7 +87,8 @@ void loop(void)
 //    loop_temt6000();
 //    loop_tmp102();
 //    loop_itg3200();
-    loop_mma7260();
+//    loop_mma7260();
+    loop_tcs34725();
 
     yield();
 }
