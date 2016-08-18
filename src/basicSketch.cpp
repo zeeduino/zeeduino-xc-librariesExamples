@@ -1,6 +1,6 @@
 #include "Arduino.h"
 
-#define FW_VERSION "0.1.3"
+#define FW_VERSION "0.1.6"
 void printBanner(void);
 
 void setup_bmp085(void);
@@ -14,6 +14,12 @@ void loop_temt6000(void);
 
 void setup_tmp102(void);
 void loop_tmp102(void);
+
+void setup_itg3200(void);
+void loop_itg3200(void);
+
+void setup_mma7260(void);
+void loop_mma7260(void);
 
 
 void setup(void)
@@ -29,7 +35,9 @@ void setup(void)
 //    setup_bmp085();
 //    setup_cap1188();
 //    setup_temt6000();
-    setup_tmp102();
+//    setup_tmp102();
+//    setup_itg3200();
+    setup_mma7260();
 }
 
 int ledState = LOW;
@@ -74,7 +82,9 @@ void loop(void)
 //    loop_bmp085();
 //    loop_cap1188();
 //    loop_temt6000();
-    loop_tmp102();
+//    loop_tmp102();
+//    loop_itg3200();
+    loop_mma7260();
 
     yield();
 }
