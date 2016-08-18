@@ -12,6 +12,9 @@ void loop_cap1188(void);
 void setup_temt6000(void);
 void loop_temt6000(void);
 
+void setup_tmp102(void);
+void loop_tmp102(void);
+
 
 void setup(void)
 {
@@ -25,7 +28,8 @@ void setup(void)
 
 //    setup_bmp085();
 //    setup_cap1188();
-    setup_temt6000();
+//    setup_temt6000();
+    setup_tmp102();
 }
 
 int ledState = LOW;
@@ -69,7 +73,8 @@ void loop(void)
 
 //    loop_bmp085();
 //    loop_cap1188();
-    loop_temt6000();
+//    loop_temt6000();
+    loop_tmp102();
 
     yield();
 }

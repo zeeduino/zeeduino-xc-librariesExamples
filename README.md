@@ -3,7 +3,7 @@
 - [ ] TMP102 - temp sensor
 - [ ] ADXL345 (sparkfun acc)
 - [ ] ITG 3200 - gyroscope
-- [ ] TEMT6000 - photo transistor
+- [x] TEMT6000 - photo transistor
 - [x] BMP085 - pressure, hum. temp. elev.
 - [ ] MMA7260 (sparkfun tri-axis breakout)
 - [ ] MMA7261Q eval board - acc.
