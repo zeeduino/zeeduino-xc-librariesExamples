@@ -5,12 +5,12 @@
 #include "Adafruit_LSM303_U.h"
 
 /* Assign a unique ID to this sensor at the same time */
-Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(54321);
+Adafruit_LSM303_Accel_Unified accel_lsm303dlhc = Adafruit_LSM303_Accel_Unified(54321);
 
 void displaySensorDetails_lsm303dlhc_a(void)
 {
   sensor_t sensor;
-  accel.getSensor(&sensor);
+  accel_lsm303dlhc.getSensor(&sensor);
   Serial.println("------------------------------------");
   Serial.print  ("Sensor:       "); Serial.println(sensor.name);
   Serial.print  ("Driver Ver:   "); Serial.println(sensor.version);
@@ -28,7 +28,7 @@ void setup_lsm303dlhc_a(void)
   Serial.println("Accelerometer Test"); Serial.println("");
 
   /* Initialise the sensor */
-  if(!accel.begin())
+  if(!accel_lsm303dlhc.begin())
   {
 	/* There was a problem detecting the ADXL345 ... check your connections */
 	Serial.println("Ooops, no LSM303 detected ... Check your wiring!");
@@ -43,7 +43,7 @@ void loop_lsm303dlhc_a(void)
 {
 	  /* Get a new sensor event */
 	  sensors_event_t event;
-	  accel.getEvent(&event);
+	  accel_lsm303dlhc.getEvent(&event);
 
 	  /* Display the results (acceleration is measured in m/s^2) */
 	  Serial.print("X: "); Serial.print(event.acceleration.x); Serial.print("  ");
