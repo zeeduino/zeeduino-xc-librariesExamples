@@ -40,7 +40,7 @@ Adafruit_BMP085_Unified bmp = Adafruit_BMP085_Unified(10085);
     sensor API sensor_t type (see Adafruit_Sensor for more information)
 */
 /**************************************************************************/
-void displaySensorDetails(void)
+void displaySensorDetails_bmp085(void)
 {
   sensor_t sensor;
   bmp.getSensor(&sensor);
@@ -75,7 +75,7 @@ void setup_bmp085(void)
   }
 
   /* Display some basic information on this sensor */
-  displaySensorDetails();
+  displaySensorDetails_bmp085();
 }
 
 /**************************************************************************/
