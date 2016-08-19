@@ -43,6 +43,14 @@ void loop_adxl345(void);
 void setup_pwm(void);
 void loop_pwm(void);
 
+void setup_dataflash_at45d_pageTest(void);
+void loop_dataflash_at45d_pageTest(void);
+
+void setup_dataflash_at45d_sectorErase(void);
+void loop_dataflash_at45d_sectorErase(void);
+
+
+
 void setup(void)
 {
     Serial.begin(115200, SERIAL_8N1);
@@ -59,13 +67,15 @@ void setup(void)
 //    setup_tmp102();
 //    setup_itg3200();
 //    setup_mma7260();
-    setup_mma7261();
+//    setup_mma7261();
 //    setup_tcs34725();
 //    setup_lsm303dlhc_a();
 //    setup_lsm303dlhc_m();
 //    setup_l3gd20u();
 //    setup_adxl345();
 //    setup_pwm();
+//    setup_dataflash_at45d_pageTest();
+    setup_dataflash_at45d_sectorErase();
 }
 
 int ledState = LOW;
@@ -84,13 +94,15 @@ void loop(void)
 //    loop_tmp102();
 //    loop_itg3200();
 //    loop_mma7260();
-    loop_mma7261();
+//    loop_mma7261();
 //    loop_tcs34725();
 //    loop_lsm303dlhc_a();
 //    loop_lsm303dlhc_m();
 //    loop_l3gd20u();
 //    loop_adxl345();
 //    loop_pwm();
+//    loop_dataflash_at45d_pageTest();
+    loop_dataflash_at45d_sectorErase();
 
     yield();
 }

@@ -45,6 +45,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-hal-lpc13xx/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-core/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-libraries/src/adafruit}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-libraries/src/dataflash/AT45D}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.cpp.misc.dialect.1689225333" name="Language standard" superClass="com.crt.advproject.cpp.misc.dialect" value="com.crt.advproject.misc.dialect.cpp0x" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.324677156" superClass="com.crt.advproject.compiler.cpp.input"/>
@@ -74,6 +75,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-hal-lpc13xx/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-core/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-libraries/src/adafruit}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-libraries/src/dataflash/AT45D}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.c.misc.dialect.2053309074" name="Language standard" superClass="com.crt.advproject.c.misc.dialect" value="com.crt.advproject.misc.dialect.c11" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.input.886875103" superClass="com.crt.advproject.compiler.input"/>
@@ -91,6 +93,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-hal-lpc13xx/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-core/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-libraries/src/adafruit}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-libraries/src/dataflash/AT45D}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.2095740502" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 								<inputType id="com.crt.advproject.assembler.input.1425095373" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
@@ -184,6 +187,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-hal-lpc13xx/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-core/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-libraries/src/adafruit}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-libraries/src/dataflash/AT45D}&quot;"/>
 								</option>
 								<inputType id="com.crt.advproject.compiler.cpp.input.1353549479" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>
@@ -213,6 +217,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-hal-lpc13xx/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-core/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-libraries/src/adafruit}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-libraries/src/dataflash/AT45D}&quot;"/>
 								</option>
 								<inputType id="com.crt.advproject.compiler.input.173131356" superClass="com.crt.advproject.compiler.input"/>
 							</tool>
@@ -231,6 +236,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-hal-lpc13xx/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-core/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-libraries/src/adafruit}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zeeduino-xc-libraries/src/dataflash/AT45D}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1293193510" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 								<inputType id="com.crt.advproject.assembler.input.1827314477" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
